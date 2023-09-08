@@ -2,7 +2,7 @@
 function handleCategoryClick(event) {
     const categoryId = event.target.getAttribute("data-category");
     if (categoryId) {
-        // Перенаправляем на страницу товаров с выбранной категорией
+        // Перенаправляем на страницу products.html с параметром category
         window.location.href = `products.html?category=${categoryId}`;
     }
 }
