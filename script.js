@@ -47,4 +47,4 @@ document.getElementById("category1").addEventListener("click", () => {
 });
 
 // По умолчанию при загрузке страницы показываем товары первой категории
-showProducts(1);
+// showProducts(1);
