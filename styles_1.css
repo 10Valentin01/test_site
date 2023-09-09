@@ -30,11 +30,12 @@ p {
 }
 
 .products-wrapper {
-    max-width: 390px; /* Ширина контейнера в 2 раза больше 390px (2 * 390px) */
-    margin: 0 auto; /* Центрирование контейнера по горизонтали */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Равномерное распределение между карточками */
+    justify-content: space-between;
+    max-width: 380px; /* Ширина контейнера */
+    margin: 0 auto; /* Центрирование по горизонтали */
+    padding: 20px;
 }
 
 .product {
