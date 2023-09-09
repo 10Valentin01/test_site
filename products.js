@@ -6,6 +6,7 @@ function loadProducts(category) {
             const categoryData = data.find(cat => cat.category === category);
             if (categoryData) {
                 displayProducts(categoryData.products);
+                console.log(categoryData);
             }
         })
         .catch(error => console.error('Ошибка загрузки товаров:', error));
