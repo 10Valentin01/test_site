@@ -1,14 +1,6 @@
-// Функция для обработки нажатия на категории
-function handleCategoryClick(event) {
-    const categoryId = event.target.getAttribute("data-category");
-    if (categoryId) {
-        // Перенаправляем на страницу products.html с параметром category
-        window.location.href = `products.html?category=${categoryId}`;
-    }
+// Функция для перехода на страницу товаров по категории
+function redirectToCategory(category) {
+    // В этой функции вы можете определить, куда перенаправлять пользователя
+    // в зависимости от выбранной категории (например, category1, category2, и т.д.).
+    // Например, можно использовать window.location.href для перехода на соответствующую страницу.
 }
-
-// Добавляем обработчик события для каждой категории
-const categories = document.querySelectorAll(".category");
-categories.forEach((category) => {
-    category.addEventListener("click", handleCategoryClick);
-});
