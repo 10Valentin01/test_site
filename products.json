@@ -1,50 +1,30 @@
 [
-  {
-    "category": "ClashClans",
-    "products": [
-      {
-        "id": 1,
-        "name": "80 + 8 кристаллов Clash of Clans по тегу!",
-        "price": 89,
-        "image": "ClashClans/1.jpg"
-      },
-      {
-        "id": 2,
-        "name": "500 +50 кристаллов Clash of Clans по тегу!",
-        "price": 449,
-        "image": "ClashClans/2.jpg"
-      },
-      {
-        "id": 3,
-        "name": "1200 + 120 кристаллов Clash of Clans по тегу!",
-        "price": 849,
-        "image": "ClashClans/3.jpg"
-      }
-      
-    ]
-  },
-  {
-    "category": "Bravl",
-    "products": [
-      {
-        "id": 1,
-        "name": "80 + 8 кристаллов Clash of Clans по тегу!",
-        "price": 89,
-        "image": "ClashClans/1.jpg"
-      },
-      {
-        "id": 2,
-        "name": "500 +50 кристаллов Clash of Clans по тегу!",
-        "price": 449,
-        "image": "ClashClans/2.jpg"
-      },
-      {
-        "id": 3,
-        "name": "1200 + 120 кристаллов Clash of Clans по тегу!",
-        "price": 849,
-        "image": "ClashClans/3.jpg"
-      }
-      
-    ]
-  },
+    {
+        "category": "Bravl",
+        "products": [
+            {
+                "id": 1,
+                "name": "Товар 1",
+                "price": 10.99,
+                "image": "ClashClans/1.jpg"
+            },
+            {
+                "id": 2,
+                "name": "Товар 2",
+                "price": 19.99,
+                "image": "ClashClans/1.jpg"
+            }
+        ]
+    },
+    {
+        "category": "ClashClans",
+        "products": [
+            {
+                "id": 3,
+                "name": "Товар 3",
+                "price": 5.99,
+                "image": "ClashClans/1.jpg"
+            }
+        ]
+    }
 ]
