@@ -27,6 +27,7 @@ function displayProducts(products) {
                 <span>${product.name}</span>
             </p>
             <p>${product.price.toFixed(2)}₽</p>
+            <button class="add-to-cart-button">Добавить в корзину</button>
         `;
         productsContainer.appendChild(productElement);
     });
