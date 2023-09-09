@@ -3,6 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    color: var(--tg-theme-text-color);
+	background: var(--tg-theme-bg-color);
 }
 
 .small-image {
@@ -12,8 +14,6 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
     text-align: center;
     padding: 20px;
 }
