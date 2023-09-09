@@ -1,1 +1,24 @@
-
+{
+  "category": "ClashClans",
+  "products": [
+    {
+      "id": 1,
+      "name": "Товар 1",
+      "price": 10.99,
+      "image": "images/product1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Товар 2",
+      "price": 19.99,
+      "image": "images/product2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Товар 3",
+      "price": 5.99,
+      "image": "images/product3.jpg"
+    }
+    // Добавьте другие товары в этой категории, если необходимо
+  ]
+}
