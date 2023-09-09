@@ -1,0 +1,51 @@
+/* Стили для макета товаров */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.small-image {
+    width: 1em; /* 1em равен размеру текущего шрифта (1em = 100%) */
+    height: 1em; /* Установите тот же размер, чтобы сохранить соотношение сторон */
+    /* Другие стили, если необходимо */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку, если не хватает места */
+    justify-content: space-between; /* Равномерное распределение между карточками */
+}
+
+.product {
+    width: calc(50% - 10px); /* Равномерное распределение по 2 столбца на ширине контейнера */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s;
+    box-sizing: border-box; /* Учитываем отступы в расчете ширины */
+    padding: 10px; /* Добавляем внутренние отступы (по желанию) */
+    /* Добавьте другие стили карточек товаров, если необходимо */
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product:hover {
+    transform: scale(1.05); /* Увеличение при наведении */
+}
