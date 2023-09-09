@@ -26,7 +26,7 @@ h1 {
 
 p {
     line-height: 1; /* Устанавливаем высоту строки равной 1, чтобы избежать дополнительных отступов */
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .products-wrapper {
@@ -40,7 +40,7 @@ p {
 
 .product {
     width: calc(50% - 10px); /* Равномерное распределение по 2 столбца на ширине контейнера */
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
@@ -54,7 +54,6 @@ p {
     max-width: 100%;
     border-radius: 20px;
     height: auto;
-    display: block;
 }
 
 /* .product img.small-image {
@@ -66,5 +65,5 @@ p {
 /* Добавьте другие стили карточек товаров, если необходимо */
 
 .product:hover {
-    transform: scale(1.05); /* Увеличение при наведении */
+    transform: scale(1.1); /* Увеличение при наведении */
 }
