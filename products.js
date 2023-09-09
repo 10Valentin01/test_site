@@ -14,7 +14,7 @@ function loadProducts(category) {
 
 // Функция для отображения товаров на странице
 function displayProducts(products) {
-    const productsContainer = document.querySelector(".products");
+    const productsContainer = document.querySelector(".products-wrapper");
     productsContainer.innerHTML = ""; // Очищаем контейнер
 
     products.forEach(product => {
