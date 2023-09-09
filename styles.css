@@ -19,7 +19,7 @@ header {
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .product-container {
@@ -28,12 +28,12 @@ h1 {
     justify-content: space-between;
     max-width: 380px; /* Ширина контейнера */
     margin: 0 auto; /* Центрирование по горизонтали */
-    padding: 20px;
+    padding: 10px;
 }
 
 .product {
-    width: calc(50% - 10px); /* Равномерное распределение по 2 столбца на ширине контейнера */
-    margin-bottom: 20px;
+    width: calc(50% - 5px); /* Равномерное распределение по 2 столбца на ширине контейнера */
+    margin-bottom: 10px;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
