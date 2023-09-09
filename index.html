@@ -2,18 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=380, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Магазин категорий</title>
+    <title>Главная страница</title>
 </head>
 <body>
     <header>
-        <h1>🗂 Выберите категорию</h1>
+        <h1>Магазин товаров</h1>
     </header>
-    <div class="categories">
-        <div class="category" data-category="1">Категория 1</div>
-        <div class="category" data-category="2">Категория 2</div>
-        <div class="category" data-category="3">Категория 3</div>
+    <div class="product-container">
+        <div class="product" onclick="redirectToCategory('category1')">
+            <img src="image1.jpg" alt="Товар 1">
+        </div>
+        <div class="product" onclick="redirectToCategory('category2')">
+            <img src="image2.jpg" alt="Товар 2">
+        </div>
+        <div class="product" onclick="redirectToCategory('category3')">
+            <img src="image3.jpg" alt="Товар 3">
+        </div>
+        <div class="product" onclick="redirectToCategory('category4')">
+            <img src="image4.jpg" alt="Товар 4">
+        </div>
+        <div class="product" onclick="redirectToCategory('category5')">
+            <img src="image5.jpg" alt="Товар 5">
+        </div>
+        <div class="product" onclick="redirectToCategory('category6')">
+            <img src="image6.jpg" alt="Товар 6">
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
