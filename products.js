@@ -1,42 +1,37 @@
-// Получаем параметр category из URL
-const urlParams = new URLSearchParams(window.location.search);
-const categoryId = urlParams.get("category");
+// Функция для загрузки товаров из JSON-файла
+function loadProducts(category) {
+    fetch('products.json') // Загрузка JSON-файла
+        .then(response => response.json()) // Преобразование в объект JavaScript
+        .then(data => {
+            const categoryData = data.find(cat => cat.category === category);
+            if (categoryData) {
+                displayProducts(categoryData.products);
+            }
+        })
+        .catch(error => console.error('Ошибка загрузки товаров:', error));
+}
 
-// Примерные данные для товаров
-const productsData = [
-    { id: 1, name: "Товар 1", price: 10.99, categoryId: 1 },
-    { id: 2, name: "Товар 2", price: 19.99, categoryId: 2 },
-    { id: 3, name: "Товар 3", price: 5.99, categoryId: 1 },
-    // Добавьте другие товары с указанием категорий
-];
-
-// Функция для отображения товаров выбранной категории
-function displayProducts() {
+// Функция для отображения товаров на странице
+function displayProducts(products) {
     const productsContainer = document.querySelector(".products");
     productsContainer.innerHTML = ""; // Очищаем контейнер
 
-    // Фильтруем товары по выбранной категории
-    const filteredProducts = productsData.filter((product) => product.categoryId === parseInt(categoryId));
-
-    filteredProducts.forEach((product) => {
+    products.forEach(product => {
         const productElement = document.createElement("div");
         productElement.classList.add("product");
         productElement.innerHTML = `
+            <img src="${product.image}" alt="${product.name}">
             <h3>${product.name}</h3>
             <p>$${product.price.toFixed(2)}</p>
-            <button onclick="addToCart(${product.id})">Добавить в корзину</button>
         `;
         productsContainer.appendChild(productElement);
     });
 }
 
-// Функция для добавления товара в корзину (пока только вывод в консоль)
-function addToCart(productId) {
-    const product = productsData.find((item) => item.id === productId);
-    if (product) {
-        console.log(`Товар "${product.name}" добавлен в корзину.`);
-    }
-}
+// Получаем параметр category из URL
+const urlParams = new URLSearchParams(window.location.search);
+const category = urlParams.get("category");
 
-// Загружаем и отображаем товары выбранной категории
-displayProducts();
+if (category) {
+    loadProducts(category);
+}
