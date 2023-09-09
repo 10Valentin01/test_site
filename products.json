@@ -4,15 +4,39 @@
         "products": [
             {
                 "id": 1,
-                "name": "Товар 1",
-                "price": 10.99,
+                "name": "80 + 8 кристаллов Clash of Clans по тегу!",
+                "price": 89,
                 "image": "ClashClans/1.jpg"
             },
             {
                 "id": 2,
-                "name": "Товар 2",
-                "price": 19.99,
-                "image": "ClashClans/1.jpg"
+                "name": "500 +50 кристаллов Clash of Clans по тегу!",
+                "price": 449,
+                "image": "ClashClans/2.jpg"
+            },
+            {
+                "id": 3,
+                "name": "1200 + 120 кристаллов Clash of Clans по тегу!",
+                "price": 849,
+                "image": "ClashClans/3.jpg"
+            },
+            {
+                "id": 4,
+                "name": "2500 + 250 кристаллов Clash of Clans по тегу!",
+                "price": 1790,
+                "image": "ClashClans/4.jpg"
+            },
+            {
+                "id": 5,
+                "name": "6500 + 650 кристаллов Clash of Clans по тегу!",
+                "price": 3999,
+                "image": "ClashClans/5.jpg"
+            },
+            {
+                "id": 6,
+                "name": "14000 + 1400 кристаллов Clash of Clans по тегу!",
+                "price": 7499,
+                "image": "ClashClans/6.jpg"
             }
         ]
     },
