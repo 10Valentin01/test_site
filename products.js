@@ -26,7 +26,7 @@ function displayProducts(products) {
                 <img src="logo.jpg" alt="Маленькая картинка" class="small-image">
                 <span>${product.name}</span>
             </p>
-            <p>Цена: ${product.price.toFixed(2)}₽</p>
+            <p class=bold>Цена: ${product.price.toFixed(2)}₽</p>
             <button class="add-to-cart-button">Добавить в корзину</button>
         `;
         productsContainer.appendChild(productElement);
