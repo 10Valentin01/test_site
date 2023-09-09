@@ -22,7 +22,10 @@ function displayProducts(products) {
         productElement.classList.add("product");
         productElement.innerHTML = `
             <img src="${product.image}" alt="${product.name}">
-            <h3>${product.name}</h3>
+            <p>
+                <img src="logo.jpg" alt="Маленькая картинка" class="small-image">
+                <span>${product.name}</span>
+            </p>
             <p>${product.price.toFixed(2)}₽</p>
         `;
         productsContainer.appendChild(productElement);
