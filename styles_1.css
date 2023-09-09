@@ -35,7 +35,7 @@ p {
     justify-content: space-between;
     max-width: 380px; /* Ширина контейнера */
     margin: 0 auto; /* Центрирование по горизонтали */
-    padding: 20px;
+    padding: 10px;
 }
 
 .product {
@@ -46,7 +46,8 @@ p {
     cursor: pointer;
     transition: transform 0.2s;
     box-sizing: border-box; /* Учитываем отступы в расчете ширины */
-    padding: 10px; /* Добавляем внутренние отступы (по желанию) */
+    padding: 3px; /* Добавляем внутренние отступы (по желанию) */
+    display: block;
 }
 
 .product img {
