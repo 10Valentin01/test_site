@@ -49,6 +49,12 @@ p {
     padding: 10px; /* Добавляем внутренние отступы (по желанию) */
 }
 
+.product img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* .product img.small-image {
     vertical-align: middle; /* Выравнивание изображения по центру вертикально */
     display: inline-block; /* Делаем изображение блочным элементом, чтобы его можно было выравнивать вертикально */
