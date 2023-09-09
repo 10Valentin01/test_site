@@ -29,8 +29,11 @@ p {
 
 .product-container {
     display: flex;
-    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку, если не хватает места */
-    justify-content: space-between; /* Равномерное распределение между карточками */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 380px; /* Ширина контейнера */
+    margin: 0 auto; /* Центрирование по горизонтали */
+    padding: 20px;
 }
 
 .product {
