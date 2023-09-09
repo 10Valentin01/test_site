@@ -29,13 +29,23 @@ p {
     font-size: 12px;
 }
 
-.product-container {
+/* .product-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 380px; /* Ширина контейнера */
     margin: 0 auto; /* Центрирование по горизонтали */
     padding: 20px;
+} */
+
+.container {
+	max-width: 390px;
+}
+
+.inner {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 200px 200px 200px;
 }
 
 .product {
