@@ -47,7 +47,6 @@ p {
     transition: transform 0.2s;
     box-sizing: border-box; /* Учитываем отступы в расчете ширины */
     padding: 3px; /* Добавляем внутренние отступы (по желанию) */
-    display: block;
     background-color: rgba(0, 0, 0, 0.1); /* Чуть темнее фон с помощью полупрозрачного цвета */
     align-items: center; /* Выравниваем элементы по центру по горизонтали */
 }
